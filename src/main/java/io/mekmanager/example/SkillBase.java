@@ -19,23 +19,23 @@ public class SkillBase {
         this.tiered = false;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public boolean isTiered() {
+    boolean isTiered() {
         return tiered;
     }
 
-    public Pair<Integer, Integer> getTargetNumbers() {
+    Pair<Integer, Integer> getTargetNumbers() {
         return targetNumbers;
     }
 
-    public Pair<String, String> getComplexityRating() {
+    Pair<String, String> getComplexityRating() {
         return complexityRating;
     }
 
-    public Pair<List<Attribute>, List<Attribute>> getLinkedAttributes() {
+    Pair<List<Attribute>, List<Attribute>> getLinkedAttributes() {
         return linkedAttributes;
     }
 }

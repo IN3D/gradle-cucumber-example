@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
-public final class LearningService {
+final class LearningService {
     private static List<Integer> standardXP;
     private static List<Integer> fastXP;
     private static List<Integer> slowXP;
@@ -24,7 +24,7 @@ public final class LearningService {
     }
 
     @Contract(pure = true)
-    public static Iterable<Integer> xpList(@NotNull Learning learning) {
+    static Iterable<Integer> xpList(@NotNull Learning learning) {
         switch (learning) {
             case FAST:
                 return fastXP;
